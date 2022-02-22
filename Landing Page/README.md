@@ -47,7 +47,8 @@ To use this project, first clone the repo on your device using the command below
 
 **The page will be developed to make the sections foldable.**
 
-If you would like to add some improvements to the page, share your opinion with us...
+If you would like to add some improvements to the page, share your opinion with us.
+
 ** Note: ** This is the project structure for modification:
 
     css
