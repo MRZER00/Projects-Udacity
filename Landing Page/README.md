@@ -1,5 +1,5 @@
 # Landing Page Project
-<!-- ![Random GIF](ZER00.gif) -->
+![Random GIF](ZER00.gif)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/navendu-pottekkat/awesome-readme?include_prereleases)
 ![GitHub last commit](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/navendu-pottekkat/awesome-readme)
@@ -62,6 +62,5 @@ If you would like to add some improvements to the page, share your opinion with 
 [(Back to top)](#table-of-contents)
 
 Leave a star in GitHub, give a clap in Medium and share this guide if you found this helpful.
-<!-- 
-![Footer](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0l5b09b0zJOQ7U4UihJ5VV5NoktIjLu5Wrg&usqp=CAU) -->
-![Footer](https://github.com/navendu-pottekkat/awesome-readme/blob/master/fooooooter.png)
+<!-- ![Footer](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0l5b09b0zJOQ7U4UihJ5VV5NoktIjLu5Wrg&usqp=CAU) -->
+![Footer](footer.gif)
