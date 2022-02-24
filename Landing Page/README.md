@@ -39,9 +39,10 @@ To use this project, first clone the repo on your device using the command below
 
 ```git init``` 
 
-```git clone https://github.com/navendu-pottekkat/nsfw-filter.git```
+```git clone https://github.com/MRZER00/Projects-Udacity.git```
 
 **OR**
+Download ZIP
 
 # Development
 [(Back to top)](#table-of-contents)
