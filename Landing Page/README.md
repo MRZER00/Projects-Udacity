@@ -42,6 +42,7 @@ To use this project, first clone the repo on your device using the command below
 ```git clone https://github.com/MRZER00/Projects-Udacity.git```
 
 **OR**
+
 Download ZIP
 
 # Development
