@@ -30,6 +30,7 @@ We did the following :
     * When the user clicks on the navigation item, the item is scrolled to the appropriate section.
     * Create a button to go to the top of the page and appear after scrolling down a bit (600px) from the screen top.
     * Hide fixed navigation bar while not scrolling after 4 seconds and appear with just a swipe. 
+* sections Collapsible
 
 ## Usage
 [(Back to top)](#table-of-contents)
