@@ -122,6 +122,8 @@ section {
 .landing__container {
     padding: 1em;
     text-align: left;
+    padding: 0 18px;
+    display: none;
 }
 
 @media only screen and (min-width: 35em){
@@ -201,7 +203,7 @@ section:nth-of-type(3n + 1) .landing__container::after {
 /* ---- Theme State Rules ---- */
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
-section.your-active-class {
+.your-active-class {
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgb(27 14 14 / 56%) 0%, rgb(78 87 147 / 82%) 100%);
 }
@@ -246,7 +248,7 @@ section.your-active-class .landing__container::after {
     right: -5em;
     cursor: pointer;
     border-radius: 90%;
-    padding: 10px;
+    padding: 16px;
     text-align: center;
     font: inherit;
 }
@@ -257,9 +259,16 @@ section.your-active-class .landing__container::after {
 }
 
 .slideDown {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+    /* background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%); */
     cursor: pointer;
     border-radius: 100%;
     padding: 0 18px;
     overflow: hidden;
+    background: linear-gradient(0deg, rgb(57 24 24 / 87%) 0%, rgb(17 26 227 / 73%) 100%);
+}
+
+.buttonActive{
+    background: rgb(96 96 191);
+    color: rgb(218 255 0);
+    font-style: italic;
 }
