@@ -48,7 +48,7 @@ Download ZIP
 # Development
 [(Back to top)](#table-of-contents)
 
-**The page will be developed to make the sections foldable.**
+<!-- **The page will be developed to make the sections foldable.** -->
 
 If you would like to add some improvements to the page, share your opinion with us.
 
@@ -64,6 +64,6 @@ If you would like to add some improvements to the page, share your opinion with 
 # Footer
 [(Back to top)](#table-of-contents)
 
-Leave a star in GitHub, give a clap in Medium and share this guide if you found this helpful.
+Leave a star in GitHub and share this guide if you found this helpful.
 <!-- ![Footer](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0l5b09b0zJOQ7U4UihJ5VV5NoktIjLu5Wrg&usqp=CAU) -->
 ![Footer](footer.gif)
