@@ -1,11 +1,11 @@
 {
-    "spec_dir": "dist/tests",
+    "spec_dir": "server/tests",
     "spec_files": [
-        "**/*[sS]pec.js"
+      "**/*[sS]pec.js"
     ],
     "helpers": [
-        "helpers/**/*.js"
+      "helpers/**/*.js"
     ],
     "stopSpecOnExpectationFailure": false,
     "random": false
-}
+  }
