@@ -5,7 +5,10 @@ const router = express.Router();
 const fs = require('fs');
 
 app.set('view engine', 'ejs');
+const morgan = require('morgan')
 
+// بيظهر نوع الطلب ف الكونسل 
+app.use(morgan(':method :url :response-time'));
 app.use('/api', route);
 app.get('/', (_req: express.Request, res: express.Response): void => {
   res.render('index');
