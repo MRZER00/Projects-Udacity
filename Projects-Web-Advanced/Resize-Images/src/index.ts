@@ -1,14 +1,19 @@
 import express from 'express';
 import route from './routers/index';
 const app = express();
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const router = express.Router();
-const fs = require('fs');
 
 app.set('view engine', 'ejs');
-const morgan = require('morgan')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const fs = require('fs');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const morgan = require('morgan');
 
 // بيظهر نوع الطلب ف الكونسل 
 app.use(morgan(':method :url :response-time'));
+
+
 app.use('/api', route);
 app.get('/', (_req: express.Request, res: express.Response): void => {
   res.render('index');
