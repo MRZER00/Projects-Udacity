@@ -14,21 +14,22 @@ describe('Test endpoint responses', () => {
   );
 });
 
-
-
-describe('Test image processing', () => {
+describe('Test image processing without sending a request to server.', () => {
   const imgname = 'img4';
   const wi = '1200';
   const he = '600';
   const outputimg = `${path.resolve(__dirname, '../', '../', 'imags', 'thum', imgname)}-${wi}-${he}.jpg`;
 
-
   it('resizes an image when proper parameters are set in the url', async () => {
-    await request.get(
-      `/api/Resize-Images?imgname=${imgname}&width=${wi}&height=${he}`
-    );
     expect(fs.existsSync(outputimg)).toBeTrue();
   });
+});
+
+
+describe('Test image processing with send request to server', () => {
+  const imgname = 'img4';
+  const wi = '1200';
+  const he = '600';
 
   it('returns a proper error message when the name is not found', async () => {
     const response = await request.get(
