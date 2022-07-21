@@ -4,15 +4,17 @@ import fs from 'fs';
 import { NextFunction } from 'express';
 
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const sharp = require('sharp');
 
 //
 export const ResizingImages = async (req: {
   query: {
-    imgname: string;
-    width: number;
-    height: number;
+    imgname?: string;
+    width?: number;
+    height?: number;
   };
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 }, res: any , next: NextFunction): Promise<void> => {
 
   try {
@@ -44,7 +46,7 @@ export const ResizingImages = async (req: {
         res.send('<h1>parameters (width or height) is unvalid</h1><h2>Please pass a valid width in the \' width \' query segment');
       }
       if ( he < 1 ) {
-        res.send('<h1>parameters (width or height) is unvalid</h1><h2>Please pass a valid height in the \' height \' query segment');
+        res.send('<h1>parameters (width or height) is unvalid</h1><h2>Please pass a valid height in the \' height \'  query segment');
       }
     }
     
@@ -59,7 +61,7 @@ export const ResizingImages = async (req: {
 
   } catch (error) {
     res.status(500);
-    fs.readFile('../Project-Web-Advanced/views/images/500.jpg',(_err, img ) => res.end(img));
+    fs.readFile('../Project-Web-Advanced/views/images/500.jpg', (_err, img ) => res.end(img));
   }
 };
 
