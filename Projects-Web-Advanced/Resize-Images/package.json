@@ -7,12 +7,17 @@
     "start": "nodemon src/index.ts",
     "build": "npx tsc",
     "lint": "eslint . --ext .ts",
-    "prettier": "prettier --config .prettierrc 'src/**/*.js' --write",
+    "prettier": "prettier --config .prettierrc src/**/*.ts --write",
     "jasmine": "jasmine",
     "test": "npm run build && npm run jasmine"
   },
   "author": "0X0ŽĒR∅⁰  -- MRZER00",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "sharp": "^0.28.1"
+
+  },
   "devDependencies": {
     "@types/express": "^4.17.11",
     "@types/jasmine": "^3.7.1",
@@ -27,13 +32,9 @@
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.4"
-  },
-  "dependencies": {
-    "express": "^4.18.1",
+    "typescript": "^4.2.4",
     "jasmine": "^3.7.0",
     "jasmine-spec-reporter": "^7.0.0",
-    "sharp": "^0.28.1",
     "supertest": "^6.1.3"
   }
 }
