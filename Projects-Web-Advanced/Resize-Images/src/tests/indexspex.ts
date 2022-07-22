@@ -18,7 +18,7 @@ describe('Test endpoint responses', () => {
 describe('Test parmeteres to image processing function.', () => {
   it('sending parmeteres to the function to test it.', async () => {
     const imgname = path.join(process.cwd(), 'imags/', 'img4') + '.jpg';
-    expect(resizeimage(imgname, 500, 300, 'test.jpg' )).toBeDefined();
+    expect(resizeimage(imgname, 1200, 600, 'test.jpg' )).toBeDefined();
   });
 });
 
