@@ -2,6 +2,7 @@ import supertest from 'supertest';
 import fs from 'fs';
 import path from 'path';
 import app from '../index';
+import ResizingImages from '../units/Resizing_images';
 
 
 const request = supertest(app);
@@ -15,13 +16,9 @@ describe('Test endpoint responses', () => {
 });
 
 describe('Test image processing without sending a request to server.', () => {
-  const imgname = 'img4';
-  const wi = '1200';
-  const he = '600';
-  const outputimg = `${path.resolve(__dirname, '../', '../', 'imags', 'thum', imgname)}-${wi}-${he}.jpg`;
+  it('Resize image function.', async () => {
+    expect(ResizingImages).toBeDefined();
 
-  it('resizes an image when proper parameters are set in the url', async () => {
-    expect(fs.existsSync(outputimg)).toBeTrue();
   });
 });
 
@@ -30,6 +27,11 @@ describe('Test image processing with send request to server', () => {
   const imgname = 'img4';
   const wi = '1200';
   const he = '600';
+  const outputimg = `${path.resolve(__dirname, '../', '../', 'imags', 'thum', imgname)}-${wi}-${he}.jpg`;
+
+  it('Check if requested file is available output-image ', async () => {
+    expect(fs.existsSync(outputimg)).toBeTrue();
+  });
 
   it('returns a proper error message when the name is not found', async () => {
     const response = await request.get(
@@ -49,12 +51,12 @@ describe('Test image processing with send request to server', () => {
     );
   });
 
-  it('returns a proper error message when the height = 0', async () => {
+  it('returns a proper error message when the width = 0', async () => {
     const response = await request.get(
       `/api/Resize-Images?imgname=${imgname}&width=${wi}&height=0`
     );
     expect(response.text).toBe(
-      '<h1>parameters (width or height) is unvalid</h1><h2>Please pass a valid height in the \' height \' query segment'
+      '<h1>parameters (width or height) is unvalid</h1><h2>Please pass a valid height in the \' height \'  query segment'
     );
   });
 });
