@@ -2,7 +2,7 @@ import supertest from 'supertest';
 import fs from 'fs';
 import path from 'path';
 import app from '../index';
-import ResizingImages from '../units/Resizing_images';
+import  { resizeimage } from '../units/Resizing_images';
 
 
 const request = supertest(app);
@@ -15,10 +15,10 @@ describe('Test endpoint responses', () => {
   );
 });
 
-describe('Test image processing without sending a request to server.', () => {
-  it('Resize image function.', async () => {
-    expect(ResizingImages).toBeDefined();
-
+describe('Test parmeteres to image processing function.', () => {
+  it('sending parmeteres to the function to test it.', async () => {
+    const imgname = path.join(process.cwd(), 'imags/', 'img4') + '.jpg';
+    expect(resizeimage(imgname, 500, 300, 'test.jpg' )).toBeDefined();
   });
 });
 
@@ -51,7 +51,7 @@ describe('Test image processing with send request to server', () => {
     );
   });
 
-  it('returns a proper error message when the width = 0', async () => {
+  it('returns a proper error message when the height = 0', async () => {
     const response = await request.get(
       `/api/Resize-Images?imgname=${imgname}&width=${wi}&height=0`
     );
