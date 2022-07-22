@@ -8,13 +8,13 @@ import { NextFunction } from 'express';
 const sharp = require('sharp');
 
 //
-async function resizeimage(input: string, wi: number, he: number, outputimg: string) {
+export const resizeimage = async (input: string, wi: number, he: number, outputimg: string) => {
   await sharp(input).resize(wi, he)
     .toFile(outputimg)
     // eslint-disable-next-line @typescript-eslint/no-empty-function
     .then(() => { });
   console.log(outputimg);
-}
+};
 
 export const ResizingImages = async (req: {
   query: {
