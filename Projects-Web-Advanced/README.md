@@ -7,8 +7,7 @@
 it's a fast server capable of storing, creating thumbnails, and saving them after modification is required on the client side.
 
 ## Creat Api Storefront
-
-
+This is a backend API built by Nodejs for an online store. It exposes a RESTful API that will be used by the frontend developer on the frontend.
 
 ## Hosting App Udagram Full-Stack
 This project is in a separate repository and this link
