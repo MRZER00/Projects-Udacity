@@ -4,7 +4,7 @@
  Advanced Full-Stack Web Development Nanodegree Program Projects
  
 ## Resize-Images
-
+it's a fast server capable of storing, creating thumbnails, and saving them after modification is required on the client side.
 
 ## Creat Api Storefront
 
