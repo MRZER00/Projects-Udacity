@@ -1,6 +1,5 @@
 ## Image processing API
-It is a fast server that is able to repository, create a thumbnail and save it locally.
-
+its a fast server capable of storing, creating thumbnails, and saving them after modification is required on the client side.
 API reference
 Change the size of any jpg image from the local server:
 - img1.jpg
